@@ -55,7 +55,7 @@ var MainWrapper = function MainWrapper(Component) {
 							"div",
 							{ id: "dollar_bill_wrapper_small", onClick: this.pageClicked },
 							!this.state.displayNext ? this.state.messages[this.state.c_synonym] : this.state.messages[this.state.synonyms.length - 1],
-							React.createElement("img", { alt: "dollar_bill_small", src: "../images/money_money_small.png", id: "dollar_bill_small" })
+							React.createElement("img", { alt: "dollar_bill_small", src: "images/money_money_small.png", id: "dollar_bill_small" })
 						),
 						React.createElement(
 							"p",
@@ -71,7 +71,7 @@ var MainWrapper = function MainWrapper(Component) {
 							"div",
 							{ id: "dollar_bill_wrapper", onClick: this.pageClicked },
 							!this.state.displayNext ? this.state.messages[this.state.c_synonym] : this.state.messages[this.state.synonyms.length - 1],
-							React.createElement("img", { alt: "dollar-bill", src: "../images/money_money.png", id: "dollar_bill" })
+							React.createElement("img", { alt: "dollar-bill", src: "images/money_money.png", id: "dollar_bill" })
 						)
 					)
 				),
@@ -264,7 +264,7 @@ var ComparisonEl = React.createClass({
 			React.createElement(
 				"footer",
 				null,
-				React.createElement("img", { alt: "ussr-tools", src: "../images/hammer_sickle_tools.png", id: "tools_img" }),
+				React.createElement("img", { alt: "ussr-tools", src: "images/hammer_sickle_tools.png", id: "tools_img" }),
 				React.createElement(
 					"h1",
 					null,
