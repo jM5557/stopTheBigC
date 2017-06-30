@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:800|Zilla+Slab");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #fff;
+  font-family: 'Zilla Slab', serif; }
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Work Sans', sans-serif; }
+
+h1 {
+  font-size: 2.75rem; }
+
+#main_wrapper {
+  background-color: #FFFFFF;
+  padding: 5vh 5vw; }
+  #main_wrapper #main_content {
+    background: green;
+    background: #69a037;
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #69a037), color-stop(71%, #3ead10), color-stop(100%, #2db300));
+    background: linear-gradient(135deg, #69a037 0%, #3ead10 71%, #2db300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69a037', endColorstr='#2db300', GradientType=1 );
+    color: #F9F9F9;
+    max-width: 90vw;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 20pt;
+    overflow: hidden;
+    position: relative;
+    padding-left: 5rem; }
+    #main_wrapper #main_content #c_word {
+      font-family: 'Work Sans', sans-serif; }
+    #main_wrapper #main_content #quote {
+      padding: 2.25rem;
+      font-size: 14pt;
+      line-height: 2.0rem;
+      text-align: left;
+      max-width: 45%; }
+    #main_wrapper #main_content #quote_source {
+      font-size: 16pt;
+      font-weight: bolder;
+      font-style: italic; }
+    #main_wrapper #main_content #dollar_bill_wrapper {
+      position: absolute;
+      left: auto;
+      right: 5%;
+      margin: auto;
+      bottom: -650px;
+      max-width: 500px;
+      text-align: center;
+      font-size: 14pt;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      #main_wrapper #main_content #dollar_bill_wrapper img {
+        max-width: 350px;
+        margin: auto;
+        margin-right: 0px;
+        -webkit-transition: bottom 0.36s ease;
+        transition: bottom 0.36s ease;
+        -webkit-animation: wiggleBill 4.35s infinite linear;
+        animation: wiggleBill 4.35s infinite linear; }
+      @media all and (max-width: 950px) {
+        #main_wrapper #main_content #dollar_bill_wrapper {
+          display: none; } }
+    #main_wrapper #main_content #dollar_bill_wrapper_small {
+      display: none;
+      text-align: center;
+      font-size: 15pt;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      #main_wrapper #main_content #dollar_bill_wrapper_small #dollar_bill_small {
+        max-width: 120px;
+        -webkit-animation: wiggleBill 4.35s infinite linear;
+        animation: wiggleBill 4.35s infinite linear;
+        display: block;
+        margin: 15px auto; }
+      @media all and (max-width: 950px) {
+        #main_wrapper #main_content #dollar_bill_wrapper_small {
+          display: block; } }
+
+@-webkit-keyframes wiggleBill {
+  from, to, 52%, 43% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  45%, 50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  47.5% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  47.75% {
+    -webkit-transform: rotate(-2.5deg);
+    transform: rotate(-2.5deg); } }
+
+@keyframes wiggleBill {
+  from, to, 52%, 43% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  45%, 50% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  47.5% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  47.75% {
+    -webkit-transform: rotate(-2.5deg);
+    transform: rotate(-2.5deg); } }
+  @media all and (max-width: 950px) {
+    #main_wrapper {
+      padding: 0% 0%; }
+      #main_wrapper #main_content {
+        max-width: 100vw;
+        min-height: 90vh;
+        height: auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-left: 0;
+        padding-bottom: 10vh; }
+        #main_wrapper #main_content #c_word {
+          font-size: 25pt;
+          margin: 25px auto; }
+        #main_wrapper #main_content #quote {
+          text-align: center;
+          max-width: 85%; } }
+
+#time_to_stop_wrapper {
+  padding: 7.5rem;
+  text-align: center;
+  background-color: crimson;
+  background: url("../images/mid-city-photo.jpg") repeat-x center center fixed;
+  background-size: cover;
+  color: #fff;
+  max-width: 100%;
+  margin-top: 1.55rem; }
+  #time_to_stop_wrapper .text_large {
+    font-size: 50pt; }
+  #time_to_stop_wrapper .text_small {
+    font-size: 25pt; }
+  #time_to_stop_wrapper #clock_el {
+    text-align: center;
+    margin-top: 3.5rem; }
+    #time_to_stop_wrapper #clock_el #clock_face {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      border: solid 5px #fff;
+      position: relative;
+      margin: auto; }
+    #time_to_stop_wrapper #clock_el .tick_mark {
+      position: absolute;
+      background-color: #fff;
+      margin: auto;
+      width: 13px;
+      height: 40px; }
+    #time_to_stop_wrapper #clock_el .tick_mark.vertical {
+      left: 0;
+      right: 0; }
+    #time_to_stop_wrapper #clock_el .tick_mark.vertical.top {
+      top: 15px; }
+    #time_to_stop_wrapper #clock_el .tick_mark.vertical.bottom {
+      bottom: 15px; }
+    #time_to_stop_wrapper #clock_el .tick_mark.horizontal {
+      top: 0;
+      bottom: 0;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    #time_to_stop_wrapper #clock_el .tick_mark.horizontal.left {
+      left: 25px; }
+    #time_to_stop_wrapper #clock_el .tick_mark.horizontal.right {
+      right: 25px; }
+    #time_to_stop_wrapper #clock_el #minute_hand, #time_to_stop_wrapper #clock_el #hour_hand {
+      position: absolute;
+      background-color: #fff;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 4px; }
+    #time_to_stop_wrapper #clock_el #minute_hand {
+      width: 10px;
+      height: 150px;
+      background-color: red;
+      -webkit-animation: rotateHand 60s infinite linear;
+      animation: rotateHand 60s infinite linear;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    #time_to_stop_wrapper #clock_el #hour_hand {
+      width: 15px;
+      height: 100px;
+      -webkit-animation: rotateHand 3600s infinite linear;
+      animation: rotateHand 3600s infinite linear;
+      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+@-webkit-keyframes rotateHand {
+  from {
+    -webkit-transform-origin: 50% 53%;
+    -webkit-transform: perspective(1px) rotate(0deg);
+    transform: perspective(1px) rotate(0deg); }
+  to {
+    -webkit-transform-origin: 50% 53%;
+    -webkit-transform: perspective(1px) rotate(360deg);
+    transform: perspective(1px) rotate(360deg); } }
+
+@keyframes rotateHand {
+  from {
+    -webkit-transform-origin: 50% 53%;
+    -webkit-transform: perspective(1px) rotate(0deg);
+    transform: perspective(1px) rotate(0deg); }
+  to {
+    -webkit-transform-origin: 50% 53%;
+    -webkit-transform: perspective(1px) rotate(360deg);
+    transform: perspective(1px) rotate(360deg); } }
+  @media all and (max-width: 950px) {
+    #time_to_stop_wrapper {
+      padding: 1.25rem; }
+      #time_to_stop_wrapper p {
+        text-align: left; }
+      #time_to_stop_wrapper .text_large {
+        font-size: 3.15rem; } }
+
+#theories_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.5rem;
+  grid-auto-rows: 1fr;
+  color: #f9f9f9;
+  font-size: 15pt; }
+  #theories_wrapper h1 {
+    margin: 2.5rem auto 2.5rem auto;
+    line-height: 2.45rem; }
+  #theories_wrapper li {
+    margin: 2.05rem; }
+    #theories_wrapper li .list_item {
+      font-size: 1.50rem;
+      display: block;
+      margin: 1.10rem auto 0.35rem auto;
+      line-height: 2.45rem; }
+  #theories_wrapper div {
+    padding: 1.5rem;
+    line-height: 25px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    z-index: 1; }
+  #theories_wrapper #capitalism_theory:before, #theories_wrapper #communism_theory:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75; }
+  #theories_wrapper #capitalism_theory:before {
+    background-color: green; }
+  #theories_wrapper #capitalism_theory {
+    border-bottom: solid 5px green; }
+  #theories_wrapper #communism_theory {
+    border-bottom: solid 5px crimson; }
+  #theories_wrapper #communism_theory:before {
+    background-color: crimson; }
+  @media all and (max-width: 950px) {
+    #theories_wrapper {
+      display: block;
+      padding: 0.75rem; }
+      #theories_wrapper h1 {
+        margin: 1.25rem auto 1.25rem auto;
+        line-height: 2.45rem;
+        font-size: 24pt; }
+      #theories_wrapper #capitalism_theory {
+        margin-bottom: 25px; }
+      #theories_wrapper div {
+        padding: 0.75rem; }
+        #theories_wrapper div .list_item {
+          line-height: 24px; }
+      #theories_wrapper li {
+        margin: 0.75rem; } }
+
+footer {
+  text-align: center;
+  padding: 2.5rem;
+  padding-bottom: calc(2.5rem - 10px);
+  background-color: #aeaeae;
+  color: #fff;
+  overflow: auto; }
+  footer #note strong {
+    font-weight: bolder;
+    font-size: 18pt;
+    font-family: 'Work Sans', sans-serif; }
+  footer img {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 50px auto;
+    margin-bottom: 50px; }
+  footer #creator_credits {
+    max-width: 950px;
+    margin: auto;
+    padding: 25px; }
+    footer #creator_credits span {
+      margin: 15px; }
+  @media all and (max-width: 950px) {
+    footer {
+      padding: 0.75rem; }
+      footer h1 {
+        text-align: left; }
+      footer #note {
+        margin-top: 10px;
+        text-align: left; }
+        footer #note strong {
+          font-size: 15pt;
+          font-weight: normal; }
+      footer #creator_credits {
+        max-width: 100%;
+        text-align: left;
+        padding: 25px 0px; }
+        footer #creator_credits span {
+          display: block; } }
